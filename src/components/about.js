@@ -41,10 +41,10 @@ const About = () => {
               image={getImage(data.aboutimage)}
               alt="Interior Design"
             />
-            <img
-              src={AwardBadge}
-              alt="Award Badge"
-              className="absolute left-[42%] -top-14 scale-100"
+            //<img
+              //src={AwardBadge}
+              //alt="Award Badge"
+              //className="absolute left-[42%] -top-14 scale-100"
             />
           </div>
         </div>
