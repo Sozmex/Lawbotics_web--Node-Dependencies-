@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import Eyebrow from "./eyebrow";
-import AwardBadge from "../images/award-badge1.png";
+import AwardBadge from "../images/award-badge2.png";
 
 const About = () => {
   const data = useStaticQuery(graphql`
