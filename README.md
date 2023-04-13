@@ -22,8 +22,4 @@
 
     Your site is now running at http://localhost:8000
 
-## 🚀 Deploy on Gatsby Cloud
-
-Deploy this Build on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/landifydesign/inteo-gatsby-template)
+    Deploy this Build on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
