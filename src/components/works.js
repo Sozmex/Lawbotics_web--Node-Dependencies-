@@ -5,6 +5,7 @@ import { getImage } from "gatsby-plugin-image";
 import WorkItem from "./workItem";
 import Eyebrow from "./eyebrow";
 import Button from "./button";
+import Button1 from "./button";
 
 const Works = () => {
   const data = useStaticQuery(graphql`
@@ -48,7 +49,7 @@ const Works = () => {
                 />
               ))}
               <div className="xl:flex hidden items-start">
-                <Button label="READ MORE" link="/" size="lg"/>
+                <Button1 label="READ MORE" link="/" size="lg"/>
               </div>
             </div>
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14">
