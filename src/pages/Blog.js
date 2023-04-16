@@ -6,7 +6,7 @@ import Works from "../components/works";
 
 const BlogPage = () => (
   <Layout>
-    <Works />
+    <Works1/>
   </Layout>
 );
 
