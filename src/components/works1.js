@@ -63,7 +63,7 @@ const Works1 = () => {
             </div>
           </div>
           <div className="xl:hidden flex items-start">
-            <Button1 label="READ MORE" link="Blog" size="lg" />
+            <Button label="READ MORE" link="Blog" size="lg" />
           </div>
         </div>
       </div>
