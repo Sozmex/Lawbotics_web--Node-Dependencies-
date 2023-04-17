@@ -6,7 +6,7 @@ import WorkItem from "./workItem";
 import Eyebrow from "./eyebrow";
 import Button from "./button";
 
-const Works = () => {
+const Works1 = () => {
   const data = useStaticQuery(graphql`
     {
       allWorksJson {
