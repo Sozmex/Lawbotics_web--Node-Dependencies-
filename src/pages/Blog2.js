@@ -1,10 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 import SearchPosts from "../components/searchPosts"
+import * as blogstyle from '../styles/blogStyles.module.css'
 
 class Blog2 extends React.Component {
   render() {
@@ -13,18 +15,25 @@ class Blog2 extends React.Component {
     const posts = data.allMdx.edges
     const localSearchBlog = data.localSearchBlog
 
+    // ... rest of the code
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <SearchPosts
-          posts={posts}
-          localSearchBlog={localSearchBlog}
-          navigate={navigate}
-          location={location}
-        />
-        <Link to="/">
-          <Button marginTop="85px">Go Home</Button>
-        </Link>
+        <div className={blogstyle.container}>
+          <SearchPosts
+            posts={posts}
+            localSearchBlog={localSearchBlog}
+            navigate={navigate}
+            location={location}
+          />
+          <div className={blogstyle.postItem}>
+            {/* Your post list code */}
+          </div>
+          <Link className={blogstyle.goHomeButton} to="/">
+            <Button marginTop="0">Go Home</Button>
+          </Link>
+        </div>
       </Layout>
     )
   }

@@ -1,0 +1,44 @@
+/* blogStyles.module.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.postItem {
+  margin-bottom: 2rem;
+}
+
+.postTitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.postDate {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.goHomeButton {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 85px;
+}
