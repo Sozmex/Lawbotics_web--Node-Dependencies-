@@ -5,14 +5,14 @@
   padding: 1rem;
 }
 
-h1 {
-  font-family: 'Roboto', sans-serif;
+.title {
+  font-family: 'Comic Sans MS', sans-serif;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-h2 {
+.subtitle {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -23,14 +23,14 @@ h2 {
 }
 
 .postTitle {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Comic Sans MS', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .postDate {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Comic Sans MS', sans-serif;
   font-size: 1rem;
   color: gray;
   margin-bottom: 1rem;
@@ -38,7 +38,7 @@ h2 {
 
 .goHomeButton {
   display: block;
-  width: 100%;
+  width: 50%;
   text-align: center;
   margin-top: 85px;
 }
