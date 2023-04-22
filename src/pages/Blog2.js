@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import Button from "../components/button"
 import SearchPosts from "../components/searchPosts"
 
-class Blog extends React.Component {
+class Blog2 extends React.Component {
   render() {
     const { data, navigate, location } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -31,7 +31,7 @@ class Blog extends React.Component {
   }
 }
 
-export default Blog
+export default Blog2
 
 export const pageQuery = graphql`
   query {
