@@ -35,9 +35,9 @@ const Works = () => {
           <div className="grid xl:grid-cols-12 grid-cols-1 xl:gap-8 gap-10 items-center">
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10">
               <div className="flex flex-col gap-6">
-                <Eyebrow label="Blog" />
+                <Eyebrow label="Insights" />
                 <h3 className="font-display md:text-display-xl text-display-md font-normal pb-4">
-                  New at <span className="italic">Lawbotics Blog</span> 
+                  New at <span className="italic">Lawbotics Insights</span> 
                 </h3>
               </div>
               {data.allWorksJson.nodes.slice(0, 1).map((node) => (
@@ -49,7 +49,7 @@ const Works = () => {
                 />
               ))}
               <div className="xl:flex hidden items-start">
-                <Button1 label="Test" link="Blog2" size="lg" />
+                <Button1 label="Read More" link="Blog2" size="lg" />
               </div>
             </div>
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14">

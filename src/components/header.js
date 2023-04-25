@@ -11,7 +11,11 @@ const Header = () => {
     { name: "Home", href: "home" },
     { name: "About", href: "about" },
     { name: "Services", href: "services" },
-    { name: "Blog", href: "works" },
+    { name: "People", href: "works" },
+    
+    { name: "Insights", href: "works" },
+    { name: "Support", href: "works" },
+   
   ];
 
   const location = useLocation();
@@ -25,7 +29,7 @@ const Header = () => {
             <GatsbyLink to="/">
               <img className="h-8 w-auto" src={Logo} alt="Logo" />
             </GatsbyLink>
-            <p className="text-body-xxl gap-4 font-medium text-neutral-700 hover:text-primary-600 px-4">
+            <p className="text-body-xxl gap-4 font-medium text-neutral-700 hover:text-primary-600 px-4 "> 
               Lawbotics
             </p>
           </div>

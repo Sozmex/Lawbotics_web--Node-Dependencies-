@@ -19,19 +19,23 @@ const Hero = () => {
     }
   `);
   return (
-    <div>
-      <div className="container mx-auto">
-        <div className="flex flex-col xl:px-32 items-center text-center gap-6 py-20">
-          <h1 className="font-display md:text-display-2xl text-display-lg">
-          Empowering Legal Success with <span className="italic"> AI Solutions</span>
-          </h1>
-          <p className="col-span-8 md:text-body-xl text-body-lg font-light text-neutral-700 max-w-[800px]">
-          AI Pioneers for Legal Excellence: Enhancing Law Firms with Tomorrow's Innovations!{" "}
-          </p>
+    <div className="relative">
+      <GatsbyImage
+        image={getImage(data.heroimage)}
+        alt="Interior Design"
+        style={{ filter: "brightness(50%)" }}
+      />
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center px-6 py-20">
+        <div className="container mx-auto">
+          <div className="flex flex-col xl:px-32 items-center text-center gap-6">
+            <h1 className="font-display md:text-display-2xl text-display-lg">
+              Lawbotics: <span className="italic"> AI Firmware</span> *this should just be the logo
+            </h1>
+            <p className="col-span-8 md:text-body-xl text-body-lg font-light text-neutral-700 max-w-[800px]">
+              AI Pioneers for Legal Excellence: Enhancing Law Firms with Tomorrow's Innovations!{" "}
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="relative">
-        <GatsbyImage image={getImage(data.heroimage)} alt="Interior Design" />
         <a href="/">
           <img
             src={CtaButton}
