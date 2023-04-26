@@ -1,3 +1,4 @@
+// index.js
 import React from "react";
 
 import Seo from "../components/seo";
@@ -9,6 +10,7 @@ import Services1 from "../components/services1";
 import Awards from "../components/awards";
 import About from "../components/about";
 import Works from "../components/works";
+import SectionBreak from "../components/SectionBreak"; // Import the SectionBreak component
 
 const IndexPage = () => (
   <Layout>
@@ -17,9 +19,13 @@ const IndexPage = () => (
     <Awards />
     <About />
     <Metrics />
+    <SectionBreak />
     <Services />
-    <Services1 />
+    <SectionBreak />
     <Works />
+    <SectionBreak />
+    <Services1 />
+    <SectionBreak />
   </Layout>
 );
 

@@ -81,6 +81,13 @@ module.exports = {
           lineHeight: "32px",
         },
       ],
+      "display-xxs": [
+        "20px",
+        {
+          letterSpacing: "0em",
+          lineHeight: "26px",
+        },
+      ],
       
       "body-xl": [
         "20px",

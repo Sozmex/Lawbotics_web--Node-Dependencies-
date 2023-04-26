@@ -23,18 +23,17 @@ const Services = () => {
             <ServiceItem
               icon={ArchitectureIcon}
               title="Bill White"
-              description="Bill received his Bachelor of Arts degree in Political Science and History from the University of Victoria in 2018 and his Juris Doctor from Queen’s University in 2022. While at Queen’s, as a participant in the Adam F. Fanaki Competition Law Moot, he won runner-up appellant awards for best individual oralist, best team, and best factum. He has also earned a Certificate in International Business Law from Bader College and received the program’s Global Law Scholarship.
-              In his spare time, Bill enjoys reading and writing science fiction. His debut novel, “The Relatives,” reached best-seller status on Amazon during its first week of publication."
+              description="CEO"
             />
             <ServiceItem
               icon={RenovationIcon}
               title="Milan Singh-Cheema"
-              description="Ceo"
+              description="COO"
             />
             <ServiceItem
               icon={ConstructionIcon}
               title="Zach Osgarby"
-              description="Does Stuff"
+              description="Cheif Technologist"
             />
           </div>
         </div>

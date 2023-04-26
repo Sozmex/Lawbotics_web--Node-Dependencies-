@@ -17,14 +17,14 @@ const Footer = () => {
     }
   `);
   return (
-    <footer>
+    <footer className="bg-neutral-100"> {/* Add the bg-neutral-100 class here */}
       <div className="container mx-auto">
         <div className="mt-2 md:mb-20 mb-10">
           <hr className="text-neutral-300"></hr>
         </div>
         <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-12">
           <div className="lg:col-span-6 md:pr-24">
-            <h3 className="font-display md:text-display-lg text-display-sm font-normal pb-4">
+            <h3 className="font-display md:text-display-lg text-display-sm font-normal pb-4 pt-2">
               Lets get started!
             </h3>
             <a
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
           <div className="lg:col-span-6 flex flex-col gap-8 xl:pl-80 lg:pl-48">
             <div className="flex flex-col gap-2">
-              <p className="text-display-xs font-display font-normal">
+              <p className="text-display-xs font-display font-normal pt-2">
                 Toronto, Ontario
               </p>
               <p className="text-body-sm font-light text-neutral-900">
@@ -49,7 +49,7 @@ const Footer = () => {
               <a
                 className="text-display-xs font-display font-normal text-primary-600"
                 href="mailto:hello@landify.design">
-                Lawbotics.dev@gmail.com
+                Lawbotics@gmail.com
               </a>
             </div>
             <div className="flex flex-col gap-2">
