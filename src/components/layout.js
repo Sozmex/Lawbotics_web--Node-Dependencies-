@@ -11,12 +11,13 @@ const Layout = ({ children }) => (
       <script src="https://gumroad.com/js/gumroad.js" />
     </Helmet>
     <Header />
-    <div>
-      <main>{children}</main>
+    <div className="min-h-screen flex flex-col"> {/* Add min-h-screen and flex classes */}
+      <main className="flex-grow">{children}</main> {/* Add flex-grow class */}
+      <Footer />
     </div>
-    <Footer />
   </>
 );
+
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

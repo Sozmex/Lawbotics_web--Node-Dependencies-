@@ -2,7 +2,7 @@
 import React from "react";
 
 const SectionBreak = () => (
-  <div className="bg-neutral-300 h-[2px] w-60% my-12 mx-auto max-w-[1200px]"></div>
+  <div className="border-t border-neutral-300 w-3/4 md:w-1/2 mx-auto my-12"></div>
 );
 
 export default SectionBreak;

@@ -6,12 +6,12 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "1.25rem",
-        sm: "2rem",
-        md: "2.5rem",
-        lg: "2rem",
-        xl: "2rem",
-        "2xl": "10rem",
+        DEFAULT: "0.25rem",
+        sm: "0.5rem",
+        md: "0.75rem",
+        lg: "1rem",
+        xl: "1rem",
+        "2xl": "5rem",
       },
     },
     colors: {
@@ -25,6 +25,7 @@ module.exports = {
         300: "#74113f",
         100: "#74113f",
         50: "#74113f",
+        10: "#6e2e4c"
       },
       neutral: {
         900: "#2C2C2C",
@@ -82,7 +83,7 @@ module.exports = {
         },
       ],
       "display-xxs": [
-        "20px",
+        "16px",
         {
           letterSpacing: "0em",
           lineHeight: "26px",
@@ -143,6 +144,12 @@ module.exports = {
       "2xl": "0px 24px 48px -12px rgba(17, 24, 39, 0.25)",
     },
     extend: {
+      ringWidth: {
+        5: "4px",
+      },
+      ringColor: {
+        black: "#000",
+      },
       spacing: {
         18: "72px",
         22: "88px",

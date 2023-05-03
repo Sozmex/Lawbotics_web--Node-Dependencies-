@@ -1,6 +1,17 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+// gatsby-node.js
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions;
+
+  if (page.path === `/`) {
+    page.matchPath = `/*`;
+    createPage(page);
+  }
+};
+
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 

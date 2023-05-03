@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Particles from "react-tsparticles";
 
 import CtaButton from "../images/cta-button.svg";
 
@@ -18,15 +19,55 @@ const Hero = () => {
       }
     }
   `);
+
+  const [particleEffect, setParticleEffect] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setParticleEffect(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="relative">
-      <div className="w-full h-[35vh] overflow-hidden relative">
+      <div className="w-full h-96 overflow-hidden relative">
         <GatsbyImage
           image={getImage(data.heroimage)}
           alt="Interior Design"
-          className="w-full h-full object-cover object-center outline-black"
-          style={{ filter: "brightness(40%) blur(3px)" }}
+          className="w-full h-96 object-cover object-center ring-5 ring-black"
+          style={{ filter: "brightness(30%) blur(3px)" }}
         />
+        {particleEffect && (
+          <Particles
+            className="absolute top-0 left-0 w-full h-full"
+            options={{
+              particles: {
+                number: {
+                  value: 100,
+                },
+                size: {
+                  value: 3,
+                },
+                links: {
+                  enable: false,
+                },
+                move: {
+                  speed: 2,
+                },
+              },
+              interactivity: {
+                detectsOn: "canvas",
+                events: {
+                  onHover: {
+                    enable: false,
+                  },
+                },
+              },
+            }}
+          />
+        )}
       </div>
       <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center px-6 py-20">
         <div className="container mx-auto">
@@ -35,7 +76,7 @@ const Hero = () => {
               Lawbotics: <span className="italic"> AI Firmware</span>
             </h1>
             <p className="col-span-8 md:text-body-xl text-body-lg font-light text-white max-w-[800px]">
-              AI Pioneers for Legal Excellence: Enhancing Law Firms with Tomorrow's Innovations!{" "}
+              Optimize Firm Workflow with the Latest in AI Innovation{" "}
             </p>
           </div>
         </div>

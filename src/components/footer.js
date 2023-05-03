@@ -19,12 +19,12 @@ const Footer = () => {
   return (
     <footer className="bg-neutral-100"> {/* Add the bg-neutral-100 class here */}
       <div className="container mx-auto">
-        <div className="mt-2 md:mb-20 mb-10">
+        <div className=" md:mb-10 mb-5">
           <hr className="text-neutral-300"></hr>
         </div>
         <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-12">
           <div className="lg:col-span-6 md:pr-24">
-            <h3 className="font-display md:text-display-lg text-display-sm font-normal pb-4 pt-2">
+            <h3 className="font-display md:text-display-lg text-display-sm font-normal pb-1 pt-1">
               Lets get started!
             </h3>
             <a

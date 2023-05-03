@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Button = ({ label, link, size, icon }) => (
   <a
-    className={`button flex gap-1 items-center justify-center bg-red text-white font-semibold  ${
+    className={`button flex gap-1 items-center justify-center bg-red text-white font-semibold hover:bg-primary-10 transition duration-300 ${
       size === "lg" ? "px-6 py-4 text-body-sm" : "px-5 py-3 text-body-xs"
     }`}
     href={link}>
@@ -38,7 +38,7 @@ const Button = ({ label, link, size, icon }) => (
 
 const Button1 = ({ label, link, size, icon }) => (
   <a
-    className={`button flex gap-1 items-center justify-center bg-red text-white font-semibold  ${
+    className={`button flex gap-1 items-center justify-center bg-red text-white font-semibold hover:bg-primary-10 transition duration-300 ${
       size === "lg" ? "px-6 py-4 text-body-sm" : "px-5 py-3 text-body-xs"
     }`}
     href={"#works1"}>

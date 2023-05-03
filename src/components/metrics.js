@@ -31,9 +31,10 @@ const Metrics = () => {
               </p>
             </div>
           </div>
-          <div className="md:mt-20 md:pb-12 mt-12 pb-12">
-            <hr className="text-neutral-300"></hr>
+          <div className="md:mt-20 md:pb-6 mt-12 pb-12">
+            
           </div>
+
         </div>
       </div>
     </div>

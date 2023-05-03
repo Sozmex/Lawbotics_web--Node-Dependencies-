@@ -1,62 +1,43 @@
 import React from "react";
-import { Link as GatsbyLink } from "gatsby";
-import { Link as ScrollLink } from "react-scroll";
-import { useLocation } from "@reach/router";
+import { Link } from "react-scroll";
 
-import Logo from "../images/logos/logo.svg";
+import Logo from "../images/Logo files/Logo SVG file-bettercrop.svg";
 import Button from "./button";
 
 const Header = () => {
   const navigation = [
-    { name: "Home", href: "home" },
-    { name: "About", href: "about" },
-    { name: "Services", href: "services" },
-    { name: "People", href: "works" },
-    
-    { name: "Insights", href: "works" },
-    { name: "Support", href: "works" },
-   
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#services" },
+    { name: "Insights", href: "#works" },
+    { name: "People", href: "#services1" },
+    { name: "Support", href: "#services1" },
   ];
-
-  const location = useLocation();
-  const isHomePage = location.pathname === "/";
-
   return (
     <header>
       <div className="container mx-auto">
         <div className="flex py-5 justify-between items-center">
-          <div className="flex flex-row gap-0 items-center">
-            <GatsbyLink to="/">
-              <img className="h-8 w-auto" src={Logo} alt="Logo" />
-            </GatsbyLink>
-            <p className="text-body-xxl gap-4 font-medium text-neutral-700 hover:text-primary-600 px-4 "> 
+          <div className="flex flex-row gap-8 items-center">
+            <Link to="/">
+              <img className="h-16 w-auto" src={Logo} alt="Logo" />
+            </Link>
+            {/* <p className="text-body-xxl gap-4 font-medium text-neutral-700 hover:text-primary-600 px-4">
               Lawbotics
-            </p>
+            </p> */}
           </div>
           <div className="flex flex-row gap-6">
             <div className="md:flex hidden flex-row gap-4 items-center">
-              {navigation.map((item) =>
-                isHomePage ? (
-                  <ScrollLink
-                    key={item.name}
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    to={item.href}
-                    className="text-body-sm font-medium text-neutral-700 hover:text-primary-600 px-4"
-                  >
-                    {item.name}
-                  </ScrollLink>
-                ) : (
-                  <GatsbyLink
-                    key={item.name}
-                    to={item.name === "Home" ? "/" : `/#${item.href}`}
-                    className="text-body-sm font-medium text-neutral-700 hover:text-primary-600 px-4"
-                  >
-                    {item.name}
-                  </GatsbyLink>
-                )
-              )}
+              {navigation.map((item) => (
+                <Link
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  key={item.name}
+                  to={item.href}
+                  className="text-body-sm font-medium text-neutral-700 hover:text-primary-600 px-4"
+                >
+                  {item.name}
+                </Link>
+              ))}
             </div>
             <Button label="CONTACT US" link="#" />
           </div>

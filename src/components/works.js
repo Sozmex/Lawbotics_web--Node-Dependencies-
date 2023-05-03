@@ -31,11 +31,11 @@ const Works = () => {
   return (
     <div id="#works">
       <div className="container mx-auto">
-        <div className="flex flex-col gap-12 lg:py-28 md:py-24 py-12">
+        <div className="flex flex-col gap-12 lg:py-28 py-12">
           <div className="grid xl:grid-cols-12 grid-cols-1 xl:gap-8 gap-10 items-center">
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10">
               <div className="flex flex-col gap-6">
-                <Eyebrow label="Insights" />
+                <Eyebrow label="INSIGHTS" />
                 <h3 className="font-display md:text-display-xl text-display-md font-normal pb-4">
                   New at <span className="italic">Lawbotics Insights</span> 
                 </h3>
@@ -64,7 +64,7 @@ const Works = () => {
             </div>
           </div>
           <div className="xl:hidden flex items-start">
-            <Button label="READ MORE" link="Blog" size="lg" />
+            <Button label="READ MORE ➔" link="Blog" size="lg" />
           </div>
         </div>
       </div>
