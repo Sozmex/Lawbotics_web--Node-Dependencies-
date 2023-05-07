@@ -14,6 +14,34 @@ module.exports = {
         "2xl": "5rem",
       },
     },
+    extend: {
+      height: {
+        97: '97rem',
+        98: '98rem',
+        99: '99rem',
+        100: '100rem',
+        105: '105rem',
+        110: '110rem',
+        115: '115rem',
+        120: '120rem',
+        125: '125rem',
+        130: '130rem',
+        135: '135rem',
+        140: '140rem',
+        145: '145rem',
+        150: '150rem',
+        155: '155rem',
+        160: '160rem',
+        165: '165rem',
+        170: '170rem',
+        175: '175rem',
+        180: '180rem',
+        185: '185rem',
+        190: '190rem',
+        195: '195rem',
+        200: '200rem',
+      },
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
@@ -40,6 +68,13 @@ module.exports = {
       body: ["Outfit", "sans-serif"],
     },
     fontSize: {
+      "number-huge": [
+        "30px",
+        {
+          letterSpacing: "0em",
+          lineHeight: "20px",
+        },
+      ],
       "display-2xl": [
         "72px",
         {
