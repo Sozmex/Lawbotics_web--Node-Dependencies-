@@ -88,7 +88,7 @@ const isJSON = (str) => {
   return true;
 };
 
-const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
+const SearchPosts = ({ posts, localSearchBlog, location ={}, navigate }) => {
   const { search } = queryString.parse(location.search);
   const [query, setQuery] = useState(search || "");
 

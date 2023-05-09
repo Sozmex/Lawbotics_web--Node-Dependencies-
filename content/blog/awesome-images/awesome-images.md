@@ -1,9 +1,8 @@
 ---
 path: awesome-images
 date: 2020-06-06T01:22:55.506Z
-title: Why AI in Canada
-description: Why AI in Canada
-excerpt: Why AI in Canada
+title: Awesome Images
+description: Fix for gatsby-plugin-mdx and gatsby-remark-images
 ---
 ![Great Gatsby](/../assets/great2.jpg "Great Gatsby")
 

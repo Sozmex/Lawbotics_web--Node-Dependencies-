@@ -1,27 +1,16 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-// gatsby-node.js
-exports.onCreatePage = ({ page, actions }) => {
-  const { createPage } = actions;
-
-  if (page.path === `/`) {
-    page.matchPath = `/*`;
-    createPage(page);
-  }
-};
-
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const BlogPost = path.resolve(`./src/templates/blog-post.js`)
   return graphql(
     `
       {
         allMdx(
           sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
+          limit: 1000S
         ) {
           edges {
             node {
@@ -50,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
 
       createPage({
         path: `blog${post.node.fields.slug}`,
-        component: blogPost,
+        component: BlogPost,
         context: {
           slug: post.node.fields.slug,
           previous,

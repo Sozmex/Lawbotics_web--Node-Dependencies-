@@ -3,7 +3,7 @@ import React from "react";
 const Metrics = () => {
   return (
     <div>
-      <div className="container mx-auto">
+      <div className="container mx-auto pt-3">
         <div className="flex flex-col">
           <div className="grid md:grid-cols-12 grid-cols-1 gap-8">
             <div className="md:col-span-4 flex xl:flex-row md:flex-col flex-row xl:gap-4 md:gap-0 gap-4 xl:items-center md:items-start items-center">
@@ -31,7 +31,9 @@ const Metrics = () => {
               </p>
             </div>
           </div>
-          <div className="md:mt-20 md:pb-6 mt-12 pb-12">
+
+          <div className="md:mt-10 md:pb-3 mt-6 pb-6">
+
             
           </div>
 
