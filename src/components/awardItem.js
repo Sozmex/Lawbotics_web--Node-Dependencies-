@@ -5,7 +5,7 @@ const AwardItem = ({ logo, title, year }) => {
   const [number, rest] = title.split("|");
 
   return (
-    <div className="flex flex-row gap-5 items-center grow pt-2 pb-1">
+    <div className="flex flex-row gap-5 items-center grow pt-1 pb-1">
       <div className="flex items-center">
         {/* <img src={logo} width={50} height={50} alt={title} /> */}
       </div>
