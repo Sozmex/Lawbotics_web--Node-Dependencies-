@@ -31,7 +31,11 @@ const Metrics = () => {
               </p>
             </div>
           </div>
+<<<<<<< HEAD
           <div className="md:mt-10 md:pb-3 mt-6 pb-6">
+=======
+          <div className="md:mt-18 md:pb-6 mt-12 pb-12">
+>>>>>>> 0cfa9441b6f74118297a4d18f7b5ebfb5ed7ddeb
             
           </div>
 

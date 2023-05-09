@@ -30,8 +30,13 @@ const Works = () => {
   `);
   return (
     <div id="#works">
+<<<<<<< HEAD
       <div className="container mx-auto pt-2">
         <div className="flex flex-col gap-12 lg:py-26 py-10">
+=======
+      <div className="container mx-auto">
+        <div className="flex flex-col gap-12 lg:py-27 py-11">
+>>>>>>> 0cfa9441b6f74118297a4d18f7b5ebfb5ed7ddeb
           <div className="grid xl:grid-cols-12 grid-cols-1 xl:gap-8 gap-10 items-center">
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10">
               <div className="flex flex-col gap-6">

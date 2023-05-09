@@ -22,7 +22,11 @@ const Awards = () => {
     <div className="bg-neutral-900">
       <div className="container mx-auto">
         <div className="flex flex-row md:items-center items-start self-auto gap-10 pl-6">
+<<<<<<< HEAD
           <div className="flex flex-row items-center self-auto md:gap-10 gap-10 pl-3 pr-10">
+=======
+          <div className="flex flex-row items-center self-auto md:gap-10 gap-10 pl-3">
+>>>>>>> 0cfa9441b6f74118297a4d18f7b5ebfb5ed7ddeb
             <p className="font-display text-display-xxs italic text-white opacity-50 py-3 gap-5 pl-4">
               Trending Insights
             </p>
