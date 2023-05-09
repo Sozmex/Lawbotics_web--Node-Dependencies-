@@ -1,8 +1,9 @@
 ---
 path: awesome-images
 date: 2020-06-06T01:22:55.506Z
-title: AI is Heteronormative
-description: AI is Heteronormative
+title: Why AI in Canada
+description: Why AI in Canada
+excerpt: Why AI in Canada
 ---
 ![Great Gatsby](/../assets/great2.jpg "Great Gatsby")
 
