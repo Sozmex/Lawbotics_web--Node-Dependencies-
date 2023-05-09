@@ -12,7 +12,7 @@ export const onRouteUpdate = ({ location, prevLocation }) => {
             behavior: "smooth",
           });
         }
-      }, 100);
+      }, 200);
     }
   };
   
