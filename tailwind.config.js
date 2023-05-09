@@ -134,8 +134,15 @@ module.exports = {
           lineHeight: "16px",
         },
       ],
+      "number-huge": [
+        "25px",
+        {
+          letterSpacing: "0em",
+          lineHeight: "50px",
+        },
+      ],
     },
-    boxShadow: {
+     boxShadow: {
       xs: "0px 1px 2px rgba(17, 24, 39, 0.05)",
       sm: "0px 1px 3px rgba(17, 24, 39, 0.1), 0px 1px 2px rgba(17, 24, 39, 0.06)",
       md: "0px 4px 8px -2px rgba(17, 24, 39, 0.1), 0px 2px 4px -2px rgba(17, 24, 39, 0.06)",

@@ -2,14 +2,19 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const AwardItem = ({ logo, title, year }) => {
+  const [number, rest] = title.split("|");
+
   return (
     <div className="flex flex-row gap-5 items-center grow pt-2 pb-1">
       <div className="flex items-center">
-        <img src={logo} width={50} height={50} alt={title} />
+        {/* <img src={logo} width={50} height={50} alt={title} /> */}
       </div>
-      <div className="flex flex-col ">
-        <p className="text-body-xs font-normal text-neutral-300">{title}</p>
-        <p className="text-body-xs font-normal text-neutral-300 pb-2" >{year}</p>
+      <div className="relative flex justify-center items-center h-full">
+        <p className="text-number-huge font-normal text-neutral-300 mr-2">{number}|</p>
+        <div className="pl-2">
+          <p className="text-body-xs font-normal text-neutral-300 ml-2">{rest}</p>
+          <p className="text-body-xs font-normal text-neutral-300 ml-2">{year}</p>
+        </div>
       </div>
     </div>
   );
